@@ -28,7 +28,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Global properties and general layout */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Verdana', sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -38,9 +38,11 @@ body {
   background-color: #1f2937;
   padding: 0 15%;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-container {
-  flex-grow: 2;
+  flex-grow: 1;
+  display: flex;
 }
-
