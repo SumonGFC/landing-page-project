@@ -36,14 +36,14 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-/* 1 -- Site-wide Styles */
-
 .flex {
   display: flex;
 }
 
-.header-container,
-.footer-container {
+/* 1 -- Site-wide Styles */
+
+.header,
+.footer {
   background-color: #1f2937;
   padding: 0 15%;
   flex-shrink: 0;
