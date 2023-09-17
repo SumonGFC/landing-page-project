@@ -1,13 +1,15 @@
-/* TABLE OF CONTENTS
+/*
+TABLE OF CONTENTS
 0 -- CSS Reset & General Styling
 1 -- Site-wide styles
-2 -- Layout
+2 -- Layout & Typography
   2.1 -- Header
   2.2 -- Content
   2.3 -- Footer
 */
 
-/* 0 -- CSS Reset & General Styling*/
+
+/* ~~~~~~~~~~~~~~~~~~~ 0 -- CSS Reset & General Styling ~~~~~~~~~~~~~~~~~~~ */
 
 * {
   margin: 0;
@@ -15,7 +17,6 @@
 }
 
 body {
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   line-height: 1.5;
@@ -47,47 +48,20 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #1f2937;
   padding: 0 15%;
   flex-shrink: 0;
-  flex-direction: column;
-}
-
-.header-container {
-  height: 535px;
-}
-
-.content-container {
-  /* height: 1200px; */
-  flex-grow: 1;
-  flex-direction: column;
-  padding: 0 18%;
-}
-
-.footer-container {
-  height: 90px;
-}
-
-/* 2 -- Layout */
-
-
-/* Header styles */
-
-/* .header-container {
-  height: 30%;
+  align-items: center;
 }
 
 .header {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
+  height: 90px
 }
 
-.header .header-logo {
+.header-logo {
   font-size: 24px;
   font-weight: 700;
 }
 
-.header .header-links {
-  font-size: 18px;
+.header-links {
   list-style-type: none;
   padding-left: 0;
   display: flex;
@@ -98,6 +72,40 @@ p, h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #e5e7eb;
 }
+
+.content-container {
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 0 18%;
+}
+
+.footer {
+  height: 80px;
+  justify-content: center;
+}
+
+.main-text {
+  color: #f9faf8;
+}
+
+.secondary-text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+
+/* 2 -- Layout & Typography*/
+
+.header-banner {
+  height: 420px;
+}
+
+/* Header styles */
+
+/*
+
+
+
 
 .header .header-logo,
 .header-banner h1 {
