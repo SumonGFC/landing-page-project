@@ -1,4 +1,13 @@
-/* CSS RESET PROPERTIES  */
+/* TABLE OF CONTENTS
+0 -- CSS Reset & General Styling
+1 -- Site-wide styles
+2 -- Layout
+  2.1 -- Header
+  2.2 -- Content
+  2.3 -- Footer
+*/
+
+/* 0 -- CSS Reset & General Styling*/
 
 * {
   margin: 0;
@@ -6,8 +15,11 @@
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
   line-height: 1.5;
+  font-family: 'Roboto', 'Verdana', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -24,13 +36,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-/* STYLES */
+/* 1 -- Site-wide Styles */
 
-/* Global properties and general layout */
-body {
-  font-family: 'Roboto', 'Verdana', sans-serif;
+.flex {
   display: flex;
-  flex-direction: column;
 }
 
 .header-container,
@@ -38,11 +47,67 @@ body {
   background-color: #1f2937;
   padding: 0 15%;
   flex-shrink: 0;
-  display: flex;
   flex-direction: column;
 }
 
-.content-container {
-  flex-grow: 1;
-  display: flex;
+.header-container {
+  height: 535px;
 }
+
+.content-container {
+  /* height: 1200px; */
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 0 18%;
+}
+
+.footer-container {
+  height: 90px;
+}
+
+/* 2 -- Layout */
+
+
+/* Header styles */
+
+/* .header-container {
+  height: 30%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header .header-logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header .header-links {
+  font-size: 18px;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.header .header-logo,
+.header-banner h1 {
+  color: #f9faf8;
+} */
+
+/* Content styles */
+
+/* Footer styles */
+
+/* .footer-container {
+  height: 5%;
+} */
