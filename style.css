@@ -1,15 +1,14 @@
-/*
-TABLE OF CONTENTS
+/*TABLE OF CONTENTS
 0 -- CSS Reset & General Styling
 1 -- Site-wide styles
 2 -- Layout & Typography
   2.1 -- Header
   2.2 -- Content
-  2.3 -- Footer
-*/
+3 -- Typography
+  */
 
 
-/* ~~~~~~~~~~~~~~~~~~~ 0 -- CSS Reset & General Styling ~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ 0 -- CSS Reset & General Styling ~~~~~~~~~~~~~~~~~~~~ */
 
 * {
   margin: 0;
@@ -41,7 +40,7 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
-/* 1 -- Site-wide Styles */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ 1 -- Site-wide Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .header,
 .footer {
@@ -53,12 +52,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .header {
   justify-content: space-between;
-  height: 90px
+  height: 90px;
 }
 
 .header-logo {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .header-links {
@@ -93,29 +92,49 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #e5e7eb;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 2 -- Layout ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* 2 -- Layout & Typography*/
-
+/*  2.1 -- Header/Banner  */
 .header-banner {
-  height: 420px;
+  height: 445px;
+  background-color: #1f2937;
+  padding: 62px 15% 98px 15%;
 }
 
-/* Header styles */
+.banner-signup {
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-right: 20px;
+  line-height: 1.25;
+}
 
-/*
+.banner-signup .hero-text {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.banner-signup .signup-button {
+  align-self: flex-start;
+  padding: 6px 36px;
+  
+}
+
+.banner-img {
+  width: 50%;
+  background-color: #6d747d;
+}
 
 
 
+/*  2.2 -- Content  */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 3 -- Typography ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.header .header-logo,
-.header-banner h1 {
-  color: #f9faf8;
-} */
-
-/* Content styles */
-
-/* Footer styles */
-
-/* .footer-container {
-  height: 5%;
-} */
+.signup-button {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #3882f6;
+  font-weight: 600;
+}
