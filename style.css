@@ -170,7 +170,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .quote-banner {
   background-color: #e5e7eb;
   flex-direction: column;
-  padding: 0 -15%;
+  padding: 120px 18%;
 }
 
 .quote-banner .quote {
