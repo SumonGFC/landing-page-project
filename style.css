@@ -73,12 +73,6 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #e5e7eb;
 }
 
-.content-container {
-  flex-grow: 1;
-  flex-direction: column;
-  padding: 0 15%;
-}
-
 .footer {
   height: 80px;
   justify-content: center;
@@ -127,15 +121,13 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #6d747d;
 }
 
-
-
-/* 2.2 -- Content  */
-  /* 2.2.1 -- info-cards */
+/* 2.2 -- Content
+2.2.1 -- info-cards */
 
 .info-cards {
   flex-direction: column;
   justify-content: center;
-  padding: 40px 0;
+  padding: 40px 15%;
 }
 
 .info-cards h2 {
@@ -171,6 +163,28 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #1f2937;
   font-size: 18px;
   text-align: center;
+}
+
+/* 2.2.2 -- quote-banner */
+
+.quote-banner {
+  background-color: #e5e7eb;
+  flex-direction: column;
+  padding: 0 -15%;
+}
+
+.quote-banner .quote {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  font-weight: 300;
+  align-self: center;
+}
+
+.quote-banner .quote-author {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 3 -- Typography ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
