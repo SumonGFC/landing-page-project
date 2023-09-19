@@ -16,6 +16,7 @@
 }
 
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   line-height: 1.5;
@@ -75,7 +76,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .content-container {
   flex-grow: 1;
   flex-direction: column;
-  padding: 0 18%;
+  padding: 0 15%;
 }
 
 .footer {
@@ -128,7 +129,50 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 
-/*  2.2 -- Content  */
+/* 2.2 -- Content  */
+  /* 2.2.1 -- info-cards */
+
+.info-cards {
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.info-cards h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  align-self: center;
+  padding-bottom: 40px;
+}
+
+.info-cards .cards {
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.cards .card {
+  width: 170px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.card .card-img {
+  width: 170px;
+  height: 170px;
+  border: solid #3882f6;
+  border-radius: 12px;
+}
+
+.card-text {
+  color: #1f2937;
+  font-size: 18px;
+  text-align: center;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 3 -- Typography ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .signup-button {
