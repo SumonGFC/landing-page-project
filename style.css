@@ -1,14 +1,15 @@
 /*TABLE OF CONTENTS
 0 -- CSS Reset & General Styling
 1 -- Site-wide styles
-2 -- Layout & Typography
-  2.1 -- Header
-  2.2 -- Content
-3 -- Typography
-  */
+2 -- Layout
+  2.1 -- Header Banner
+  2.2 -- Info Cards
+  2.3 -- Quote Banner
+  2.4 -- Call to Action Signup
+*/
 
 
-/* ~~~~~~~~~~~~~~~~~~~~ 0 -- CSS Reset & General Styling ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ 0 -- CSS Reset & General Styles ~~~~~~~~~~~~~~~~~~~~ */
 
 * {
   margin: 0;
@@ -37,8 +38,26 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .flex {
   display: flex;
+}
+
+.main-text {
+  color: #f9faf8;
+}
+
+.secondary-text {
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~ 1 -- Site-wide Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -57,39 +76,26 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .header-logo {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 800;
 }
 
 .header-links {
-  list-style-type: none;
-  padding-left: 0;
-  display: flex;
   gap: 20px;
 }
 
 .header-links a {
-  text-decoration: none;
   color: #e5e7eb;
 }
 
 .footer {
-  height: 80px;
+  height: 90px;
   justify-content: center;
 }
 
-.main-text {
-  color: #f9faf8;
-}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 2 -- Content ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.secondary-text {
-  font-size: 18px;
-  color: #e5e7eb;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 2 -- Layout ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/*  2.1 -- Header/Banner  */
+/*  2.1 -- Header Banner  */
 .header-banner {
   height: 445px;
   background-color: #1f2937;
@@ -112,8 +118,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .banner-signup .signup-button {
   align-self: flex-start;
-  padding: 6px 36px;
-  
+  padding: 6px 36px; 
 }
 
 .banner-img {
@@ -121,8 +126,15 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: #6d747d;
 }
 
-/* 2.2 -- Content
-2.2.1 -- info-cards */
+.signup-button {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #3882f6;
+  font-weight: 600;
+}
+
+/* 2.2 -- Info Cards */
 
 .info-cards {
   flex-direction: column;
@@ -165,12 +177,12 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* 2.2.2 -- quote-banner */
+/* 2.3 -- Quote Banner */
 
 .quote-banner {
   background-color: #e5e7eb;
   flex-direction: column;
-  padding: 120px 18%;
+  padding: 120px 22%;
 }
 
 .quote-banner .quote {
@@ -187,12 +199,38 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 3 -- Typography ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* 2.4 -- Call to Action Signup */
 
-.signup-button {
-  border: none;
-  border-radius: 8px;
-  color: white;
+.signup-container {
+  padding: 120px 15%;
+}
+
+.signup-container .signup {
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 140px;
   background-color: #3882f6;
+  border-radius: 12px;
+}
+
+.signup-text-message {
+  color: #e5e7eb;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.signup-header {
+  color: #ffffff;
+  font-size: 28px;
   font-weight: 600;
+}
+
+.signup button {
+  border: #ffffff solid;
+  background-color: #3882f6;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 4px 40px;
+  font-weight: bold;
+  border-radius: 12px;
 }
